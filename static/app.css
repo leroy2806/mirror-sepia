@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+/* #button {
+    background: none;
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    display: block;
+} */
+.video-output canvas{
+    display: flex;
+    z-index: 1;
+
+}
+.video-output video{
+    display: flex;
+    /* position: relative; */
+    width: 100%;
+    height:auto;
+    z-index: 1;
+
+    
+}
+.controls button {
+    background-color: #04AA6D; 
+    border: 1px solid green; 
+    color: white; 
+    cursor: pointer; 
+    float: left; 
+  }
+.videoout2{
+    display: flex;
+
+    -webkit-transform: scaleX(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    z-index: 1;
+}
+#video2{
+    /* position: relative; */
+    width: 100%;
+    height:auto;
+    z-index: 1;
+    filter: sepia(100%);
+    /*filter: hue-rotate(90deg); */
+}
+
+#contain{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 1;
+}
+
+.overlaydiv{
+    position: absolute;
+    z-index: 99;
+    margin:0;
+    padding: 0;
+}
+
+#divlay{
+    position: absolute;
+    z-index: 100;
+    margin:0;
+    background-image: url(./static/over.png);
+    overflow: hidden;
+}

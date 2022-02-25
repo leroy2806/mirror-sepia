@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>reflection</title>
+  <link rel="stylesheet" href="./static/app.css"/>
+</head>
+<body >
+  <section>
+    <main>
+        <div class="controls">
+          <button id="button">CAMERA</button> 
+          <button id="mybutton">CLICK ME</button>
+          <select id="select">
+          <option></option>
+          </select>
+        </div>
+    <div class = "overlaydiv" id = "divlay">
+      <img src = "static/over.png" id= "divlay" width=" 100%">
+		<div id = "contain" width="100%">
+		  <table width = "100%">
+        <tbody>
+          <tr>
+            <td valign="bottom">
+              <div class="video-output">
+                <canvas id="canvas" style="display: none"></canvas>
+                <video id="video" autoplay playsinline></video>
+              </div>
+            </td>
+          </tr>
+			    <tr>
+            <td valign="top" id = "viddiv2">
+              <div class="videoout2" >
+                <div id = "inside"></div>
+                <canvas id="canvas2" style="display: none"></canvas>
+                <video id="video2" autoplay playsinline></video>
+              </div>
+            </td>
+          </tr>
+			
+			</tbody>
+      </table>
+    </div>
+    </div>
+        
+        
+    </main>
+    <script src="./static/app.js"></script>
+    <script>
+      function scrollToBottom (canvas) {
+        var div = document.getElementById(canvas);
+        div.scrollTop = div.scrollHeight - div.clientHeight;
+      }
+    </script>
+  </section>
+</body>
+</html>
